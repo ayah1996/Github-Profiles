@@ -14,6 +14,7 @@ async function getUser(username) {
     createUserCard(data);
     getRepos(username);
   } catch (error) {
+    // console.error(error);
     cardContainer.innerHTML = notFound;
   }
 }
